@@ -1,6 +1,6 @@
 # MPGG
 
-This is the implementation of [Multi-Prototype Guided Gating Framework for Multimodal Emotion Recognition in Conversations]in PyTorch.
+This is the implementation of [Multi-Prototype Guided Gating Framework for Multimodal Emotion Recognition in Conversations] in PyTorch.
 
 ## Install
 ****
