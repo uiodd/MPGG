@@ -2,7 +2,7 @@
 
 This is the implementation of [Multi-Prototype Guided Gating Framework for Multimodal Emotion Recognition in Conversations] in PyTorch.
 
-## Install
+## Requirements
 ****
 ```
 numpy==1.26.4
@@ -28,20 +28,19 @@ Download the preprocessed datasets and put them into `data/`.
 1 - Install Requirements
 
 ```
-pip install -r ./requirements.txt
+pip install -r requirements.txt
 ```
 
 2 - Download the preprocessed datasets and put them into `data/`.
 
- 
+We provide training commands aligned with the paper settings.
+## Usage
 
-3 -  Usage:
-
-Train on IEMOCAP dataset
+### Train on IEMOCAP dataset
 ```
-python train.py --dataset iemocap --optimizer adam --batch_size 32 --lr 1e-4 --weight_decay 1e-5 --dropout 0.5 --temperature 1.0 --lambda_proto 0.1 --gamma5 0.1 --epochs 100 --seed 42 --queue_size 4096 --use_memory_queue --use_momentum
+python train.py --Dataset IEMOCAP --batch-size 32 --lr 1e-4 --l2 1e-5 --dropout 0.5 --temp 1.0 --gamma_5 0.1 --lambda_proto 0.1 --projection_dim 32 --hidden_dim 1024 --n_head 8 --epochs 100 --seed 42 
 ```
-Train on MELD dataset
+### Train on MELD dataset
 ```
-python train.py --dataset meld --optimizer adam --batch_size 32 --lr 3e-5 --weight_decay 1e-5 --dropout 0.2 --temperature 8 --lambda_proto 1 --gamma5 0.1 --epochs 10 --seed 42 --queue_size 4096 --use_memory_queue --use_momentum
+python train.py --Dataset MELD --batch-size 32 --lr 3e-5 --l2 1e-5 --dropout 0.2 --temp 8 --gamma_5 0.1 --lambda_proto 1 --projection_dim 32 --hidden_dim 1024 --n_head 8 --epochs 10 --seed 42
 ```
