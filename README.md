@@ -19,7 +19,7 @@ requests==2.32.5
 
 This repository contains the source code of our paper, using the following datasets:
 
-- [IEMOCAP](https://drive.google.com/file/d/1FDDMuPK_r_2HSpc0GNyDucYYUId_UD_8/view?usp=sharing)
+- [IEMOCAP](https://drive.google.com/file/d/1y4xLSKicRHZCd7dsG5y75TFecvHHyY3Q/view?usp=drive_link)
 Download the preprocessed datasets and put them into `data/`.
 
 - [MELD](https://drive.google.com/file/d/1H8NAwW_ogxsFOQvCuesxiVqBqa8X19J-/view?usp=drive_link)
